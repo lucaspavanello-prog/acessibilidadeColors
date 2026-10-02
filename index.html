@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Site com Cartões</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0b2341;
+            color: white;
+        }
+
+        header {
+            padding: 30px;
+            text-align: center;
+            background-color: #081b33;
+        }
+
+        nav {
+            padding: 15px;
+            text-align: center;
+            background-color: #102f55;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        main {
+            padding: 40px;
+        }
+
+        .cartoes {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .cartao {
+            background-color: white;
+            color: black;
+            padding: 20px;
+            border-radius: 8px;
+            min-height: 160px;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            text-align: center;
+            background-color: #081b33;
+        }
+
+        .pessoa{
+          font-size: 15px
+        }
+
+        #cartao1{
+          background-color: #003A79;
+          color: #99F3CF;
+        }
+
+        #cartao2{
+          background-color: #2E0054;
+          color: #FF70EA;
+        }
+
+        #cartao3{
+          background-color: #A0E5A2;
+          color: #7E0000;
+        }
+        
+        #cartao4{
+          background-color: #E8F886;
+          color: #BE0404;
+        }
+
+        #cartao5{
+          background-color: #F7FF00;
+          color: #002CBE;
+        }
+        
+        #cartao6{
+          background-color: #9400B6;
+          color: #B6FF99;
+        }
+
+        #cartao7{
+          background-color: #B50000;
+          color: #FFAA00;
+        }
+
+        #cartao8{
+          background-color: #F6F1BC;
+          color: #6B0083;
+        }
+
+        /* Quando a tela ficar menor, organiza em 2 colunas */
+        @media (max-width: 850px) {
+            .cartoes {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Ally's card</h1>
+        <p>Cartões legais</p>
+    </header>
+
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    </nav>
+
+    <main>
+        <div class="cartoes">
+
+
+
+            <div class="cartao" id="cartao1">
+                <h2>Cartão 1</h2>
+                <p>
+                  Tudo o que um sonho precisa para ser realizado é alguém que 
+                  acredite que ele possa ser realizado.
+                </p>
+                <p class = "pessoa">-Roberto Shinyashiki</p>
+            </div>
+
+
+
+            <div class="cartao" id="cartao2">
+                <h2>Cartão 2</h2>
+                <p>
+                  Uma vida sem desafios não vale a pena ser vivida.
+                </p>
+                <p class = "pessoa">-Sócrates</p>
+            </div>
+
+
+
+            <div class="cartao" id="cartao3">
+                <h2>Cartão 3</h2>
+                <p>
+                    Não fales bem de ti aos outros, pois não os convencerás. 
+                    Não fales mal, pois te julgarão muito pior do que és.
+                </p>
+                <p class = "pessoa">-Confúcio</p>
+            </div>
+
+
+
+            <div class="cartao" id="cartao4">
+                <h2>Cartão 4</h2>
+                <p>
+                    A esperança é o sonho do homem acordado.
+                </p>
+                <p class = "pessoa">-Aristóteles</p>
+            </div>
+
+
+
+            <div class="cartao" id="cartao5">
+                <h2>Cartão 5</h2>
+                <p>
+                    Para conhecermos os amigos é necessário passar pelo sucesso e pela desgraça. 
+                    No sucesso, verificamos a quantidade e, na desgraça, a qualidade.
+                </p>
+                <p class = "pessoa">-Confúcio</p>
+            </div>
+
+
+
+            <div class="cartao" id="cartao6">
+                <h2>Cartão 6</h2>
+                <p>
+                    Quem quer vencer um obstáculo 
+                    deve armar-se da força do leão e da prudência da serpente.
+                </p>
+                <p class = "pessoa">-Píndaro</p>
+            </div>
+
+
+
+            <div class="cartao" id="cartao7">
+                <h2>Cartão 7</h2>
+                <p>
+                    Quanto maiores são as dificuldades a vencer, maior será a satisfação.
+                </p>
+                <p class = "pessoa">-Cícero</p>
+            </div>
+
+
+
+
+            <div class="cartao" id="cartao8">
+                <h2>Cartão 8</h2>
+                <p>
+                    A teimosia transforma as grandes barreiras em pequenos 
+                    obstáculos e constrói os grandes vencedores.
+                </p>
+                <p class = "pessoa">-Albertino Fernandes</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 - LC_Ally</p>
+    </footer>
+
+</body>
+</html>
